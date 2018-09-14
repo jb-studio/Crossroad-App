@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		17C61E4CD315AA2E047CDA7E /* Pods_Crossroad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259F7B6F5E8E61868BE9E5E6 /* Pods_Crossroad.framework */; };
 		CB5FBC8E214BEE2400642A7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FBC8D214BEE2400642A7C /* AppDelegate.swift */; };
-		CB5FBC90214BEE2400642A7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FBC8F214BEE2400642A7C /* ViewController.swift */; };
-		CB5FBC93214BEE2400642A7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5FBC91214BEE2400642A7C /* Main.storyboard */; };
 		CB5FBC95214BEE2400642A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5FBC94214BEE2400642A7C /* Assets.xcassets */; };
 		CB5FBC98214BEE2400642A7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5FBC96214BEE2400642A7C /* LaunchScreen.storyboard */; };
+		CB5FBCA4214C572800642A7C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FBCA3214C572800642A7C /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +19,10 @@
 		259F7B6F5E8E61868BE9E5E6 /* Pods_Crossroad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crossroad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5FBC8A214BEE2400642A7C /* Crossroad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crossroad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5FBC8D214BEE2400642A7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB5FBC8F214BEE2400642A7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB5FBC92214BEE2400642A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB5FBC94214BEE2400642A7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB5FBC97214BEE2400642A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB5FBC99214BEE2400642A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB5FBCA3214C572800642A7C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F8FED3222D3CC0ED1CA1762B /* Pods-Crossroad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crossroad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crossroad/Pods-Crossroad.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,13 +68,44 @@
 			isa = PBXGroup;
 			children = (
 				CB5FBC8D214BEE2400642A7C /* AppDelegate.swift */,
-				CB5FBC8F214BEE2400642A7C /* ViewController.swift */,
-				CB5FBC91214BEE2400642A7C /* Main.storyboard */,
+				CB5FBCA1214C56C800642A7C /* ViewModels */,
+				CB5FBCA0214C56BF00642A7C /* Models */,
+				CB5FBC9F214C56A700642A7C /* ViewControllers */,
 				CB5FBC94214BEE2400642A7C /* Assets.xcassets */,
 				CB5FBC96214BEE2400642A7C /* LaunchScreen.storyboard */,
 				CB5FBC99214BEE2400642A7C /* Info.plist */,
 			);
 			path = Crossroad;
+			sourceTree = "<group>";
+		};
+		CB5FBC9F214C56A700642A7C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB5FBCA2214C56FF00642A7C /* SearchViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CB5FBCA0214C56BF00642A7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB5FBCA1214C56C800642A7C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CB5FBCA2214C56FF00642A7C /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB5FBCA3214C572800642A7C /* SearchViewController.swift */,
+			);
+			path = SearchViewController;
 			sourceTree = "<group>";
 		};
 		E706D09161D7253E9382D79C /* Pods */ = {
@@ -150,7 +179,6 @@
 			files = (
 				CB5FBC98214BEE2400642A7C /* LaunchScreen.storyboard in Resources */,
 				CB5FBC95214BEE2400642A7C /* Assets.xcassets in Resources */,
-				CB5FBC93214BEE2400642A7C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,15 +190,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Crossroad-checkManifestLockResult.txt",
 			);
@@ -184,15 +208,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Crossroad/Pods-Crossroad-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
 			);
@@ -208,7 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5FBC90214BEE2400642A7C /* ViewController.swift in Sources */,
+				CB5FBCA4214C572800642A7C /* SearchViewController.swift in Sources */,
 				CB5FBC8E214BEE2400642A7C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,14 +236,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB5FBC91214BEE2400642A7C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB5FBC92214BEE2400642A7C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CB5FBC96214BEE2400642A7C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
