@@ -12,6 +12,9 @@
 		CB5FBC95214BEE2400642A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5FBC94214BEE2400642A7C /* Assets.xcassets */; };
 		CB5FBC98214BEE2400642A7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5FBC96214BEE2400642A7C /* LaunchScreen.storyboard */; };
 		CB5FBCA4214C572800642A7C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FBCA3214C572800642A7C /* SearchViewController.swift */; };
+		CB5FBCA6214C58EC00642A7C /* SearchViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FBCA5214C58EC00642A7C /* SearchViewViewModel.swift */; };
+		CB5FBCA9214C593500642A7C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FBCA8214C593500642A7C /* Profile.swift */; };
+		CB5FBCAB214C5B2F00642A7C /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FBCAA214C5B2F00642A7C /* SearchCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		CB5FBC97214BEE2400642A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB5FBC99214BEE2400642A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5FBCA3214C572800642A7C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CB5FBCA5214C58EC00642A7C /* SearchViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewViewModel.swift; sourceTree = "<group>"; };
+		CB5FBCA8214C593500642A7C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		CB5FBCAA214C5B2F00642A7C /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		F8FED3222D3CC0ED1CA1762B /* Pods-Crossroad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crossroad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crossroad/Pods-Crossroad.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				CB5FBC8D214BEE2400642A7C /* AppDelegate.swift */,
+				CB5FBCA7214C591900642A7C /* Protocols */,
 				CB5FBCA1214C56C800642A7C /* ViewModels */,
 				CB5FBCA0214C56BF00642A7C /* Models */,
 				CB5FBC9F214C56A700642A7C /* ViewControllers */,
@@ -89,6 +96,7 @@
 		CB5FBCA0214C56BF00642A7C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CB5FBCA8214C593500642A7C /* Profile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -96,6 +104,7 @@
 		CB5FBCA1214C56C800642A7C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CB5FBCA5214C58EC00642A7C /* SearchViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -104,8 +113,16 @@
 			isa = PBXGroup;
 			children = (
 				CB5FBCA3214C572800642A7C /* SearchViewController.swift */,
+				CB5FBCAA214C5B2F00642A7C /* SearchCollectionViewCell.swift */,
 			);
 			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		CB5FBCA7214C591900642A7C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		E706D09161D7253E9382D79C /* Pods */ = {
@@ -229,7 +246,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB5FBCA4214C572800642A7C /* SearchViewController.swift in Sources */,
+				CB5FBCA9214C593500642A7C /* Profile.swift in Sources */,
 				CB5FBC8E214BEE2400642A7C /* AppDelegate.swift in Sources */,
+				CB5FBCA6214C58EC00642A7C /* SearchViewViewModel.swift in Sources */,
+				CB5FBCAB214C5B2F00642A7C /* SearchCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,7 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         
-        let layout = UICollectionViewLayout()
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = 5
+        layout.minimumInteritemSpacing = 5
+        
         let searchController = SearchViewControllers(collectionViewLayout: layout)
         let navController = UINavigationController(rootViewController: searchController)
         window?.rootViewController = navController
