@@ -15,6 +15,8 @@
 		CB5FBCA6214C58EC00642A7C /* SearchViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FBCA5214C58EC00642A7C /* SearchViewViewModel.swift */; };
 		CB5FBCA9214C593500642A7C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FBCA8214C593500642A7C /* Profile.swift */; };
 		CB5FBCAB214C5B2F00642A7C /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FBCAA214C5B2F00642A7C /* SearchCollectionViewCell.swift */; };
+		CB5FBCAF214C822600642A7C /* SearchCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FBCAE214C822600642A7C /* SearchCellViewModel.swift */; };
+		CB5FBCB1214C82F800642A7C /* SearchCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FBCB0214C82F800642A7C /* SearchCellRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		CB5FBCA5214C58EC00642A7C /* SearchViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewViewModel.swift; sourceTree = "<group>"; };
 		CB5FBCA8214C593500642A7C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		CB5FBCAA214C5B2F00642A7C /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		CB5FBCAE214C822600642A7C /* SearchCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellViewModel.swift; sourceTree = "<group>"; };
+		CB5FBCB0214C82F800642A7C /* SearchCellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellRepresentable.swift; sourceTree = "<group>"; };
 		F8FED3222D3CC0ED1CA1762B /* Pods-Crossroad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crossroad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crossroad/Pods-Crossroad.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				CB5FBC8D214BEE2400642A7C /* AppDelegate.swift */,
+				CB5FBCAC214C634800642A7C /* Extensions */,
 				CB5FBCA7214C591900642A7C /* Protocols */,
 				CB5FBCA1214C56C800642A7C /* ViewModels */,
 				CB5FBCA0214C56BF00642A7C /* Models */,
@@ -104,7 +109,7 @@
 		CB5FBCA1214C56C800642A7C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				CB5FBCA5214C58EC00642A7C /* SearchViewViewModel.swift */,
+				CB5FBCAD214C81FF00642A7C /* SearchVIewViewModel */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -121,8 +126,25 @@
 		CB5FBCA7214C591900642A7C /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				CB5FBCB0214C82F800642A7C /* SearchCellRepresentable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CB5FBCAC214C634800642A7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CB5FBCAD214C81FF00642A7C /* SearchVIewViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB5FBCA5214C58EC00642A7C /* SearchViewViewModel.swift */,
+				CB5FBCAE214C822600642A7C /* SearchCellViewModel.swift */,
+			);
+			path = SearchVIewViewModel;
 			sourceTree = "<group>";
 		};
 		E706D09161D7253E9382D79C /* Pods */ = {
@@ -245,10 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5FBCB1214C82F800642A7C /* SearchCellRepresentable.swift in Sources */,
 				CB5FBCA4214C572800642A7C /* SearchViewController.swift in Sources */,
 				CB5FBCA9214C593500642A7C /* Profile.swift in Sources */,
 				CB5FBC8E214BEE2400642A7C /* AppDelegate.swift in Sources */,
 				CB5FBCA6214C58EC00642A7C /* SearchViewViewModel.swift in Sources */,
+				CB5FBCAF214C822600642A7C /* SearchCellViewModel.swift in Sources */,
 				CB5FBCAB214C5B2F00642A7C /* SearchCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,10 +6,11 @@
 //  Copyright © 2018 Juri. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Profile {
-    
-    
-    
+    let name: String
+    let age: String
+    let country: String
+    let avatar: UIImage?
 }

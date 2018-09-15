@@ -11,16 +11,32 @@ import UIKit
 class SearchViewControllers: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let searchCellId = "searchCellId"
+    var viewModel: SearchViewViewModel!
     
     override func viewDidLoad() {
+        
+        let profiles = [
+            Profile(name: "Nick", age: "13", country: "Ukrain", avatar: nil),
+            Profile(name: "Sarah", age: "23", country: "Russia", avatar: nil),
+            Profile(name: "Poul", age: "43", country: "Russia", avatar: nil),
+            Profile(name: "Adam", age: "23", country: "United Kingdom", avatar: nil),
+            Profile(name: "Michael", age: "53", country: "Russia", avatar: nil),
+            Profile(name: "Luck", age: "20", country: "Russia", avatar: nil)
+        ]
+        
         super.viewDidLoad()
         
         collectionView?.backgroundColor = UIColor.white
         collectionView?.register(SearchCollectionViewCell.self, forCellWithReuseIdentifier: searchCellId)
+        
+        viewModel = SearchViewViewModel(profilesList: profiles)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        if viewModel.numberOfProfiles > 0 {
+            return viewModel.numberOfProfiles
+        }
+        return 0
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -36,7 +52,7 @@ class SearchViewControllers: UICollectionViewController, UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.view.frame.width / 2 - 3, height: 200)
+        return CGSize(width: self.view.frame.width / 2, height: 200)
     }
     
 }
