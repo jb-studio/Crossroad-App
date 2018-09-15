@@ -9,8 +9,8 @@
 import UIKit
 
 struct Profile {
-    let name: String
-    let age: String
-    let country: String
-    let avatar: UIImage?
+    var name: String
+    var age: String
+    var country: String
+    var avatar: UIImage?
 }

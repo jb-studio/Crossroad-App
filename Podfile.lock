@@ -1,16 +1,26 @@
 PODS:
+  - Alamofire (4.7.3)
   - EasyPeasy (1.7.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.7)
   - EasyPeasy
+  - SDWebImage (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - EasyPeasy
+    - SDWebImage
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   EasyPeasy: 2f2785ed78c6f9e9045221f2ff317730e7321bff
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
 
-PODFILE CHECKSUM: 90b6e21d3dfa7ca9460009d872e07c8ae2772f76
+PODFILE CHECKSUM: f4b2ac27bba2c1f507073c15a5315e950eb334eb
 
 COCOAPODS: 1.5.3

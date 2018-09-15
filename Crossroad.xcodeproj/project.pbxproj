@@ -56,6 +56,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB29EA21214DC455001242B0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		CB5FBC81214BEE2400642A7C = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				CB5FBC8D214BEE2400642A7C /* AppDelegate.swift */,
+				CB29EA21214DC455001242B0 /* Networking */,
 				CB5FBCAC214C634800642A7C /* Extensions */,
 				CB5FBCA7214C591900642A7C /* Protocols */,
 				CB5FBCA1214C56C800642A7C /* ViewModels */,
@@ -249,11 +257,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Crossroad/Pods-Crossroad-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
