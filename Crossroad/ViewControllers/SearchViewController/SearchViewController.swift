@@ -42,6 +42,8 @@ class SearchViewControllers: UICollectionViewController, UICollectionViewDelegat
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: searchCellId, for: indexPath) as! SearchCollectionViewCell
         
+        cell.configure(viewViewModel: viewModel.viewModel(for: indexPath.row) )
+        
         if indexPath.row % 2 == 0 {
             cell.backgroundColor = UIColor.red
         } else {

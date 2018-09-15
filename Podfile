@@ -7,5 +7,6 @@ target 'Crossroad' do
 
   # Pods for Crossroad
   pod "EasyPeasy"
-  
+  pod 'SDWebImage', '~> 4.0'
+  pod 'Alamofire', '~> 4.7'
 end
